@@ -28,173 +28,179 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.Button_Up = new System.Windows.Forms.Button();
+            this.Button_Left = new System.Windows.Forms.Button();
+            this.Button_Start = new System.Windows.Forms.Button();
+            this.Button_Down = new System.Windows.Forms.Button();
+            this.Button_Right = new System.Windows.Forms.Button();
+            this.Label_1 = new System.Windows.Forms.Label();
+            this.Label_2 = new System.Windows.Forms.Label();
+            this.Text_Condition = new System.Windows.Forms.TextBox();
+            this.Button_Reference = new System.Windows.Forms.Button();
+            this.Button_Settings = new System.Windows.Forms.Button();
+            this.Label_3 = new System.Windows.Forms.Label();
+            this.Label_4 = new System.Windows.Forms.Label();
+            this.Label_5 = new System.Windows.Forms.Label();
+            this.Text_Laser_Power = new System.Windows.Forms.TextBox();
+            this.Text_Step = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
-            // button1
+            // Button_Up
             // 
-            this.button1.Location = new System.Drawing.Point(654, 245);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(55, 55);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Вверх";
-            this.button1.UseVisualStyleBackColor = true;
+            this.Button_Up.Location = new System.Drawing.Point(654, 245);
+            this.Button_Up.Name = "Button_Up";
+            this.Button_Up.Size = new System.Drawing.Size(55, 55);
+            this.Button_Up.TabIndex = 0;
+            this.Button_Up.Text = "Вверх";
+            this.Button_Up.UseVisualStyleBackColor = true;
+            this.Button_Up.Click += new System.EventHandler(this.Button_Up_Click);
             // 
-            // button2
+            // Button_Left
             // 
-            this.button2.Location = new System.Drawing.Point(593, 306);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(55, 55);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "Влево";
-            this.button2.UseVisualStyleBackColor = true;
+            this.Button_Left.Location = new System.Drawing.Point(593, 306);
+            this.Button_Left.Name = "Button_Left";
+            this.Button_Left.Size = new System.Drawing.Size(55, 55);
+            this.Button_Left.TabIndex = 1;
+            this.Button_Left.Text = "Влево";
+            this.Button_Left.UseVisualStyleBackColor = true;
+            this.Button_Left.Click += new System.EventHandler(this.Button_Left_Click);
             // 
-            // button3
+            // Button_Start
             // 
-            this.button3.Location = new System.Drawing.Point(654, 306);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(55, 55);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "Пуск";
-            this.button3.UseVisualStyleBackColor = true;
+            this.Button_Start.Location = new System.Drawing.Point(654, 306);
+            this.Button_Start.Name = "Button_Start";
+            this.Button_Start.Size = new System.Drawing.Size(55, 55);
+            this.Button_Start.TabIndex = 2;
+            this.Button_Start.Text = "Пуск";
+            this.Button_Start.UseVisualStyleBackColor = true;
+            this.Button_Start.Click += new System.EventHandler(this.Button_Start_Click);
             // 
-            // button4
+            // Button_Down
             // 
-            this.button4.Location = new System.Drawing.Point(654, 367);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(55, 55);
-            this.button4.TabIndex = 3;
-            this.button4.Text = "Вниз";
-            this.button4.UseVisualStyleBackColor = true;
+            this.Button_Down.Location = new System.Drawing.Point(654, 367);
+            this.Button_Down.Name = "Button_Down";
+            this.Button_Down.Size = new System.Drawing.Size(55, 55);
+            this.Button_Down.TabIndex = 3;
+            this.Button_Down.Text = "Вниз";
+            this.Button_Down.UseVisualStyleBackColor = true;
+            this.Button_Down.Click += new System.EventHandler(this.Button_Down_Click);
             // 
-            // button5
+            // Button_Right
             // 
-            this.button5.Location = new System.Drawing.Point(715, 306);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(55, 55);
-            this.button5.TabIndex = 4;
-            this.button5.Text = "Вправо";
-            this.button5.UseVisualStyleBackColor = true;
+            this.Button_Right.Location = new System.Drawing.Point(715, 310);
+            this.Button_Right.Name = "Button_Right";
+            this.Button_Right.Size = new System.Drawing.Size(55, 55);
+            this.Button_Right.TabIndex = 4;
+            this.Button_Right.Text = "Вправо";
+            this.Button_Right.UseVisualStyleBackColor = true;
+            this.Button_Right.Click += new System.EventHandler(this.Button_Right_Click);
             // 
-            // label1
+            // Label_1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(33, 35);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(60, 13);
-            this.label1.TabIndex = 5;
-            this.label1.Text = "LaserBeam";
+            this.Label_1.AutoSize = true;
+            this.Label_1.Location = new System.Drawing.Point(33, 35);
+            this.Label_1.Name = "Label_1";
+            this.Label_1.Size = new System.Drawing.Size(60, 13);
+            this.Label_1.TabIndex = 5;
+            this.Label_1.Text = "LaserBeam";
             // 
-            // label2
+            // Label_2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(33, 64);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(64, 13);
-            this.label2.TabIndex = 6;
-            this.label2.Text = "Состояние:";
+            this.Label_2.AutoSize = true;
+            this.Label_2.Location = new System.Drawing.Point(33, 64);
+            this.Label_2.Name = "Label_2";
+            this.Label_2.Size = new System.Drawing.Size(64, 13);
+            this.Label_2.TabIndex = 6;
+            this.Label_2.Text = "Состояние:";
             // 
-            // textBox1
+            // Text_Condition
             // 
-            this.textBox1.Location = new System.Drawing.Point(103, 61);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 7;
+            this.Text_Condition.Location = new System.Drawing.Point(103, 61);
+            this.Text_Condition.Name = "Text_Condition";
+            this.Text_Condition.Size = new System.Drawing.Size(100, 20);
+            this.Text_Condition.TabIndex = 7;
             // 
-            // button7
+            // Button_Reference
             // 
-            this.button7.Location = new System.Drawing.Point(572, 24);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(75, 23);
-            this.button7.TabIndex = 9;
-            this.button7.Text = "Справка";
-            this.button7.UseVisualStyleBackColor = true;
+            this.Button_Reference.Location = new System.Drawing.Point(572, 24);
+            this.Button_Reference.Name = "Button_Reference";
+            this.Button_Reference.Size = new System.Drawing.Size(75, 23);
+            this.Button_Reference.TabIndex = 9;
+            this.Button_Reference.Text = "Справка";
+            this.Button_Reference.UseVisualStyleBackColor = true;
+            this.Button_Reference.Click += new System.EventHandler(this.Button_Reference_Click);
             // 
-            // button8
+            // Button_Settings
             // 
-            this.button8.Location = new System.Drawing.Point(677, 24);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(75, 23);
-            this.button8.TabIndex = 10;
-            this.button8.Text = "Настройки";
-            this.button8.UseVisualStyleBackColor = true;
+            this.Button_Settings.Location = new System.Drawing.Point(677, 24);
+            this.Button_Settings.Name = "Button_Settings";
+            this.Button_Settings.Size = new System.Drawing.Size(75, 23);
+            this.Button_Settings.TabIndex = 10;
+            this.Button_Settings.Text = "Настройки";
+            this.Button_Settings.UseVisualStyleBackColor = true;
+            this.Button_Settings.Click += new System.EventHandler(this.Button_Settings_Click);
             // 
-            // label3
+            // Label_3
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(33, 306);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(101, 13);
-            this.label3.TabIndex = 11;
-            this.label3.Text = "Мощность Лазера";
+            this.Label_3.AutoSize = true;
+            this.Label_3.Location = new System.Drawing.Point(33, 306);
+            this.Label_3.Name = "Label_3";
+            this.Label_3.Size = new System.Drawing.Size(101, 13);
+            this.Label_3.TabIndex = 11;
+            this.Label_3.Text = "Мощность Лазера";
             // 
-            // label4
+            // Label_4
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(33, 348);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(27, 13);
-            this.label4.TabIndex = 12;
-            this.label4.Text = "Шаг";
+            this.Label_4.AutoSize = true;
+            this.Label_4.Location = new System.Drawing.Point(33, 348);
+            this.Label_4.Name = "Label_4";
+            this.Label_4.Size = new System.Drawing.Size(27, 13);
+            this.Label_4.TabIndex = 12;
+            this.Label_4.Text = "Шаг";
             // 
-            // label5
+            // Label_5
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(172, 348);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(26, 13);
-            this.label5.TabIndex = 13;
-            this.label5.Text = "мм.";
+            this.Label_5.AutoSize = true;
+            this.Label_5.Location = new System.Drawing.Point(172, 348);
+            this.Label_5.Name = "Label_5";
+            this.Label_5.Size = new System.Drawing.Size(26, 13);
+            this.Label_5.TabIndex = 13;
+            this.Label_5.Text = "мм.";
             // 
-            // textBox2
+            // Text_Laser_Power
             // 
-            this.textBox2.Location = new System.Drawing.Point(140, 303);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 14;
+            this.Text_Laser_Power.Location = new System.Drawing.Point(140, 303);
+            this.Text_Laser_Power.Name = "Text_Laser_Power";
+            this.Text_Laser_Power.Size = new System.Drawing.Size(100, 20);
+            this.Text_Laser_Power.TabIndex = 14;
             // 
-            // textBox3
+            // Text_Step
             // 
-            this.textBox3.Location = new System.Drawing.Point(66, 345);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 20);
-            this.textBox3.TabIndex = 15;
-            this.textBox3.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
+            this.Text_Step.Location = new System.Drawing.Point(66, 345);
+            this.Text_Step.Name = "Text_Step";
+            this.Text_Step.Size = new System.Drawing.Size(100, 20);
+            this.Text_Step.TabIndex = 15;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.button8);
-            this.Controls.Add(this.button7);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.Text_Step);
+            this.Controls.Add(this.Text_Laser_Power);
+            this.Controls.Add(this.Label_5);
+            this.Controls.Add(this.Label_4);
+            this.Controls.Add(this.Label_3);
+            this.Controls.Add(this.Button_Settings);
+            this.Controls.Add(this.Button_Reference);
+            this.Controls.Add(this.Text_Condition);
+            this.Controls.Add(this.Label_2);
+            this.Controls.Add(this.Label_1);
+            this.Controls.Add(this.Button_Right);
+            this.Controls.Add(this.Button_Down);
+            this.Controls.Add(this.Button_Start);
+            this.Controls.Add(this.Button_Left);
+            this.Controls.Add(this.Button_Up);
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
@@ -204,21 +210,21 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.Button Button_Up;
+        private System.Windows.Forms.Button Button_Left;
+        private System.Windows.Forms.Button Button_Start;
+        private System.Windows.Forms.Button Button_Down;
+        private System.Windows.Forms.Button Button_Right;
+        private System.Windows.Forms.Label Label_1;
+        private System.Windows.Forms.Label Label_2;
+        private System.Windows.Forms.TextBox Text_Condition;
+        private System.Windows.Forms.Button Button_Reference;
+        private System.Windows.Forms.Button Button_Settings;
+        private System.Windows.Forms.Label Label_3;
+        private System.Windows.Forms.Label Label_4;
+        private System.Windows.Forms.Label Label_5;
+        private System.Windows.Forms.TextBox Text_Laser_Power;
+        private System.Windows.Forms.TextBox Text_Step;
     }
 }
 
