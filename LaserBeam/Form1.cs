@@ -19,7 +19,7 @@ namespace LaserBeam
 
         private void Button_Settings_Click(object sender, EventArgs e)
         {
-
+            
         }
 
         private void Button_Reference_Click(object sender, EventArgs e)
